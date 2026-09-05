@@ -7,6 +7,10 @@ the detail column becomes wider after quitting and relaunching the app.
 The app uses only SwiftUI and plain `Text` views. There are no custom AppKit
 views, representables, focus handlers, or application-level persistence.
 
+## Video
+
+https://github.com/user-attachments/assets/de3d48bc-6c54-47a7-a97b-2384ac2bcb57
+
 ## Environment
 
 Reproduced with:
