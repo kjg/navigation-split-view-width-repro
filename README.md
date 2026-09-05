@@ -24,13 +24,11 @@ The script builds an ad-hoc signed app in `.build/` and launches it.
 
 ## Reproduction steps
 
-1. Run `./run.sh`.
-2. Leave the sidebar visible.
-3. Drag the divider between **Content** and **Detail** so the Content column is
-   noticeably wide.
-4. Quit the app with Command-Q.
+1. Run `./reset-state.sh`.
+2. Run `./seed-state.sh`.
+3. Run `./run.sh`.
+4. Leave the sidebar visible and quit the app with Command-Q.
 5. Run `./run.sh` again.
-6. Repeat steps 4 and 5.
 
 The Content column becomes narrower and the Detail column becomes wider. The
 amount lost by Content corresponds to the visible Sidebar width.
@@ -59,6 +57,8 @@ is restored on macOS 27 as:
 ```
 
 The restored middle column loses exactly the sidebar's 300-point width.
+
+Running `./seed-state.sh` again restores the original values for another test.
 
 Reset the app's saved state with:
 
