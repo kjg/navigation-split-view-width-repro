@@ -49,16 +49,16 @@ defaults read com.kjg.SplitViewWidthRepro \
 For example, this valid three-column state:
 
 ```text
-300 / 400 / 499
+300 / 600 / 499
 ```
 
 is restored on macOS 27 as:
 
 ```text
-300 / 200 / 699
+300 / 300 / 799
 ```
 
-The restored middle column loses the sidebar's width.
+The restored middle column loses exactly the sidebar's 300-point width.
 
 Reset the app's saved state with:
 

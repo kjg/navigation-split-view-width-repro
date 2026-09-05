@@ -14,7 +14,7 @@ struct SplitViewWidthReproApp: App {
                     .navigationSplitViewColumnWidth(min: 300, ideal: 480, max: .infinity)
             }
         }
-        .defaultSize(width: 1_200, height: 700)
+        .defaultSize(width: 1_400, height: 700)
     }
 
     private func column(_ title: String, color: Color) -> some View {
